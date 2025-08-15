@@ -1,11 +1,7 @@
-#!/usr/bin/env node
-'use strict';
+import fs from 'node:fs';
+import path from 'node:path';
 
-const fooP = async () => {
-
-};
-
-export default fooP;
-
-// delete the shebang if not cli script
-// if it can be CLI or a module, make a (non "main":) executable file with a shebang that imports fooP and uses it with process.argv (see esc-get-project-linecounts)
+export const getMatchingFilesA = (dirPath, filenameRegex = /\.m?js$/) => (fs.readdirSync( dirPath, { withFileTypes: true } ).flatMap( fileO => {
+  const absPath = path.join( dirPath, fileO.name );
+  return fileO.isDirectory() ? getFilesA( absPath ) : filenameRegex.test( fileO.name ) ? [ absPath ] : [];
+} ));
