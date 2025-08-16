@@ -1,6 +1,6 @@
 {
   "name": "esc-get-matching-files-array",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sync function that returns an array of files matching regex pattern, recursively inside specified directory.",
   "main": "main.mjs",
   "dependencies": {
@@ -14,8 +14,25 @@
     "url": "git+https://github.com/softwarecreations/esc-get-matching-files-array.git"
   },
   "keywords": [
-    "minimal-dependencies",
-    "simple"
+    "file-system",
+    "recursive",
+    "regex",
+    "pattern-matching",
+    "files",
+    "sync",
+    "synchronous",
+    "no-dependencies",
+    "glob-alternative",
+    "utility",
+    "file-list",
+    "directory",
+    "javascript",
+    "nodejs",
+    "small",
+    "simple",
+    "audit",
+    "matching",
+    "stable-api"
   ],
   "author": "softwarecreations",
   "license": "MIT",

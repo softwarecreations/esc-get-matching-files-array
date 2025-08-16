@@ -4,7 +4,7 @@ A synchronous function that returns an array of files matching a regex pattern, 
 
 ## Want async version?
 
-[esc-get-matching-files-array-async](https://github.com/softwarecreations/esc-get-matching-files-array-async)
+[esc-get-matching-files-array-async](https://www.npmjs.com/package/esc-get-matching-files-array-async)
 
 ## Features
 
@@ -27,7 +27,7 @@ The problems with glob are (as of 2025-08-15)
 * Slow in some situations
 * Hard to audit and trust
 * Over-complicated
-* Subject to change
+* Subject to change: 11 major versions thus far
 
 ## Installation
 
