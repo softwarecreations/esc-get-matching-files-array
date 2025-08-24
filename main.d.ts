@@ -8,3 +8,5 @@ export declare function getMatchingFilesA(
   dirPath: string, 
   filenameRegex?: RegExp
 ): string[];
+
+export default getMatchingFilesA;

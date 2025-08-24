@@ -5,3 +5,5 @@ export const getMatchingFilesA = (dirPath, filenameRegex = /\.m?js$/) => (fs.rea
   const absPath = path.join( dirPath, fileO.name );
   return fileO.isDirectory() ? getFilesA( absPath ) : filenameRegex.test( fileO.name ) ? [ absPath ] : [];
 } ));
+
+export default getMatchingFilesA;
